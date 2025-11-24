@@ -1,0 +1,16 @@
+===== Vault Export =====
+Exported At: 2025-11-24 21:04:30
+Total Records: 2
+File Name: export.txt
+-----------------------------
+
+ID: 6924c55325e92a8031b0e99a
+Name: Eisha
+Value: 250
+Created At: Tue Nov 25 2025 01:51:31 GMT+0500 (Pakistan Standard Time)
+
+ID: 6924c84199184e423280b006
+Name: Alina
+Value: 400
+Created At: Tue Nov 25 2025 02:04:01 GMT+0500 (Pakistan Standard Time)
+
