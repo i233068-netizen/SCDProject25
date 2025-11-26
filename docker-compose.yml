@@ -1,0 +1,31 @@
+version: "3.9"
+
+services:
+  database:
+    image: mongo:latest
+    container_name: scd-local-mongo
+    volumes:
+      - scd-local-mongo-vol:/data/db
+    networks:
+      - scd-local-net
+
+  backend:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: scd-local-backend
+    depends_on:
+      - database
+    ports:
+      - "3000:3000"
+    environment:
+      - MONGO_URI=${MONGO_URI}
+    networks:
+      - scd-local-net
+
+volumes:
+  scd-local-mongo-vol:
+
+networks:
+  scd-local-net:
+    driver: bridge
